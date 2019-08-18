@@ -1,22 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+   <div id="app">
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  data(){
+   return{
+     msg:"跟组件"
+    }
+  },
+  components:{
+
   }
 }
 </script>
-
-<style>
+/****组件局部样式****/
+<style lang="less" scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +26,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px solid black;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
